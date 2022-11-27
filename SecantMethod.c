@@ -16,11 +16,11 @@ int main(){
 	arr[1]=1.4;		//x1= 1.4
 	
 	
-	for(int i=0;i<=10;i++){
+	for(int i=0; i <= 10; i++){
 		
-		if(arr[i]!= arr[i+1]){ //It continue as long as no two consecutive roots are the same
+		if(arr[i] != arr[i+1]){ //It continue as long as no two consecutive roots are the same
 		
-			arr[i+2]=arr[i+1]-((function(arr[i+1])*(arr[i]-arr[i+1]))/(function(arr[i])-function(arr[i+1]))); //Secant Calculating
+			arr[i+2] = arr[i+1]-((function(arr[i+1])*(arr[i]-arr[i+1]))/(function(arr[i])-function(arr[i+1]))); //Secant Calculating
 			
 			printf("x%d result= %f \n",i,arr[i+2]);
 		}
