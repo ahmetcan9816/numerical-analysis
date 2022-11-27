@@ -30,7 +30,7 @@ int main(){
         for (j = 0; j < n; j++)
         {
         	printf("%2d ", A[i][j]);
-		}
+	}
         	
     	printf("\n");
     }   	
