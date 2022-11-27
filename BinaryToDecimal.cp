@@ -17,25 +17,25 @@ int main(){
 	
 	int j=-1; //for Fractional part
 	
-	for(int i=0; i<=31;i++)
+	for(int i=0; i<=31; i++)
 	{
 		printf("Enter %d. bit: ",i+1);
 		scanf("%d",&binaryNumber[i]);
 		
 		
-		if(i<=8)
+		if(i <= 8)
 		{
-			if(binaryNumber[i]==1)
+			if(binaryNumber[i] == 1)
 			c += pow(2,(8-i));
 		}
 		
-		if(i>=9)
+		if(i >= 9)
 		{
-			if(binaryNumber[i]==1)
+			if(binaryNumber[i] == 1)
 			f += pow(2,j);		
 			
 			j--;
-	    }
+	   	}
 	}
 		
 	
@@ -43,16 +43,12 @@ int main(){
 	exponentialPart= pow(2,c);
 	decimalNumber=exponentialPart*f;
 	
-		if(binaryNumber[0]==1)
+		if(binaryNumber[0] == 1)
 		decimalNumber*=-1;
 		
 	printf("Exponential Part = %f\n",exponentialPart);
 	printf("Fractional Part = %f\n",f);
 	printf("Decimal Number = %f\n",decimalNumber);
-	
-		
-
-	
 	
 
 }
