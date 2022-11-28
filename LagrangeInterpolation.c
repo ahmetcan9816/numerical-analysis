@@ -2,7 +2,7 @@
 
 int main(){
 	float X[200],Y[200];
-	float L, SumPolinom, ip;
+	float L, PolynomialSum, ip;
 	int n, i, j;
 	
 	 printf("Enter number of value: ");
@@ -29,9 +29,9 @@ int main(){
 				L *= (ip - X[j]) / (X[i] - X[j]);	
 			}
 		}
-		SumPolinom += L*Y[i];
+		PolynomialSum += L*Y[i];
 	}
 	
-	printf("Interpolated at %f is %f",ip,SumPolinom);
+	printf("Interpolated at %f is %f",ip,PolynomialSum);
 
 }
